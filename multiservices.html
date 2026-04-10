@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiservices - MDK</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    background: #1c1c1c;
+    color: white;
+    padding: 20px;
+}
+
+.section {
+    padding: 40px 20px;
+}
+
+.service {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background: #f1c40f;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>🧰 Multiservices MDK</h1>
+<p>Nos services complémentaires</p>
+</header>
+
+<section class="section">
+
+<div class="service" onclick="toggleSection('tampon')">🔖 Tampon société</div>
+<div id="tampon" style="display:none;">
+  <img src="tampon1.jpg" width="250" style="margin:10px;">
+  <img src="tampon2.jpg" width="250" style="margin:10px;">
+</div>
+
+<div class="service" onclick="toggleSection('badge')">🪪 Badge & télécommande</div>
+<div id="badge" style="display:none;">
+  <img src="badge1.jpg" width="250" style="margin:10px;">
+  <img src="badge2.jpg" width="250" style="margin:10px;">
+</div>
+
+<div class="service" onclick="toggleSection('pile')">🔋 Changement de piles</div>
+<div id="pile" style="display:none;">
+  <img src="pile1.jpg" width="250" style="margin:10px;">
+  <img src="pile2.jpg" width="250" style="margin:10px;">
+</div>
+
+<div class="service" onclick="toggleSection('plaque')">🚗 Plaque d'immatriculation</div>
+<div id="plaque" style="display:none;">
+  <img src="plaque1.jpg" width="250" style="margin:10px;">
+  <img src="plaque2.jpg" width="250" style="margin:10px;">
+</div>
+
+<div class="service" onclick="toggleSection('gravure')">✒️ Gravure personnalisée</div>
+<div id="gravure" style="display:none;">
+
+  <video width="300" controls>
+    <source src="gravure.mp4" type="video/mp4">
+  </video>
+
+  <img src="gravure1.jpg" width="250" style="margin:10px;">
+  <img src="gravure2.jpg" width="250" style="margin:10px;">
+</div>
+  
+</div>
+
+
+<a class="btn" href="tel:0781126776">📞 Appeler maintenant</a>
+
+</section>
+<script>
+function toggleSection(id) {
+  var section = document.getElementById(id);
+  if (section.style.display === "none") {
+    section.style.display = "block";
+  } else {
+    section.style.display = "none";
+  }
+}
+</script>
+}
+</script>
+</body>
+</html>
